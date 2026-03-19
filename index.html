@@ -7,13 +7,13 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #f2f4f7; /* Professionele achtergrondkleur */
+            background: #f3f3f3; /* Professionele neutrale achtergrondkleur */
             color: #2c3e50;
         }
 
         /* HERO */
         .hero {
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            background: linear-gradient(135deg, #2f3542, #57606f); /* Donkergrijs → antraciet */
             padding: 80px 20px;
             text-align: center;
             color: white;
@@ -46,20 +46,33 @@
         }
 
         .card {
-            background: white;
+            background: #faf7f2; /* zandkleur */
             padding: 25px;
             border-radius: 12px;
-            border: 1px solid #dfe4ea;
+            border: 1px solid #e0dcd5;
             box-shadow: 0 2px 6px rgba(0,0,0,0.05);
         }
 
+        /* Variatie voor kaarten */
+        .card:nth-child(2),
+        .card:nth-child(5) {
+            background: #f0f0f0; /* lichtgrijs */
+            border-color: #d6d6d6;
+        }
+
+        .card:nth-child(3),
+        .card:nth-child(6) {
+            background: #f7f5f0; /* zacht beige */
+            border-color: #ddd8ce;
+        }
+
         .card h3 {
-            color: #1e3c72;
+            color: #2f3542; /* donkergrijs */
             margin-top: 0;
         }
 
         .card a {
-            color: #2a5298;
+            color: #6c5ce7; /* modern paars accent */
             font-weight: bold;
             text-decoration: none;
         }
@@ -67,7 +80,7 @@
         .footer {
             text-align: center;
             margin: 60px 0 20px;
-            color: #7f8c8d;
+            color: #7a7a7a;
             font-size: 14px;
         }
     </style>
@@ -87,7 +100,7 @@
 
     <!-- CONTENT -->
     <div class="container">
-        <h2 style="text-align:center; color:#1e3c72;">Overzicht</h2>
+        <h2 style="text-align:center; color:#2f3542;">Overzicht</h2>
 
         <div class="grid">
 
