@@ -37,52 +37,44 @@
     gap: 30px;
 ">
 
-<div style="
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-">
+<!-- CARD TEMPLATE (professioneel, subtiele kleuren) -->
 
-<!-- CARD 1 – wit -->
-<div style="background:#ffffff; padding:25px; border-radius:12px; border:1px solid #d7dce2; box-shadow:0 2px 6px rgba(0,0,0,0.04);">
+<div style="background:white; padding:25px; border-radius:12px; border:1px solid #dfe4ea; box-shadow:0 2px 6px rgba(0,0,0,0.05);">
     <h3 style="color:#1e3c72;">Over mij</h3>
     <p>Korte introductie over mijn achtergrond, interesses en professionele doelen.</p>
     <a href="about.md" style="color:#2a5298; font-weight:bold;">Lees meer</a>
 </div>
 
-<!-- CARD 2 – lichtgrijs-blauw -->
-<div style="background:#f6f8fb; padding:25px; border-radius:12px; border:1px solid #cfd6de; box-shadow:0 2px 6px rgba(0,0,0,0.04);">
+<div style="background:white; padding:25px; border-radius:12px; border:1px solid #dfe4ea; box-shadow:0 2px 6px rgba(0,0,0,0.05);">
     <h3 style="color:#1e3c72;">Events & Reflecties</h3>
     <p>Mijn reflecties op conferenties, gastcolleges en professionele activiteiten.</p>
     <a href="events.md" style="color:#2a5298; font-weight:bold;">Bekijk events</a>
 </div>
 
-<!-- CARD 3 – iets donkerder grijs-blauw -->
-<div style="background:#eef1f6; padding:25px; border-radius:12px; border:1px solid #c5ccd5; box-shadow:0 2px 6px rgba(0,0,0,0.04);">
+<div style="background:white; padding:25px; border-radius:12px; border:1px solid #dfe4ea; box-shadow:0 2px 6px rgba(0,0,0,0.05);">
     <h3 style="color:#1e3c72;">Podcast</h3>
     <p>Een gesprek met een expert over een IT‑onderwerp dat mij inspireert.</p>
     <a href="podcast.md" style="color:#2a5298; font-weight:bold;">Beluister de podcast</a>
 </div>
 
-<!-- CARD 4 – wit -->
-<div style="background:#ffffff; padding:25px; border-radius:12px; border:1px solid #d7dce2; box-shadow:0 2px 6px rgba(0,0,0,0.04);">
+<div style="background:white; padding:25px; border-radius:12px; border:1px solid #dfe4ea; box-shadow:0 2px 6px rgba(0,0,0,0.05);">
     <h3 style="color:#1e3c72;">Hackathon</h3>
     <p>Mijn deelname aan een hackathon: aanpak, teamwork en lessons learned.</p>
     <a href="hackathon.md" style="color:#2a5298; font-weight:bold;">Lees de ervaring</a>
 </div>
 
-<!-- CARD 5 – lichtgrijs-blauw -->
-<div style="background:#f6f8fb; padding:25px; border-radius:12px; border:1px solid #cfd6de; box-shadow:0 2px 6px rgba(0,0,0,0.04);">
+<div style="background:white; padding:25px; border-radius:12px; border:1px solid #dfe4ea; box-shadow:0 2px 6px rgba(0,0,0,0.05);">
     <h3 style="color:#1e3c72;">LinkedIn</h3>
     <p>Mijn professioneel netwerk en online aanwezigheid.</p>
     <a href="linkedin.md" style="color:#2a5298; font-weight:bold;">Bekijk mijn profiel</a>
 </div>
 
-<!-- CARD 6 – iets donkerder grijs-blauw -->
-<div style="background:#eef1f6; padding:25px; border-radius:12px; border:1px solid #c5ccd5; box-shadow:0 2px 6px rgba(0,0,0,0.04);">
+<div style="background:white; padding:25px; border-radius:12px; border:1px solid #dfe4ea; box-shadow:0 2px 6px rgba(0,0,0,0.05);">
     <h3 style="color:#1e3c72;">TI on Stage Pitch</h3>
     <p>Mijn pitch over mijn stageproject tijdens TI on Stage.</p>
     <a href="stagepitch.md" style="color:#2a5298; font-weight:bold;">Bekijk de pitch</a>
+</div>
+
 </div>
 
 <!-- FOOTER -->
