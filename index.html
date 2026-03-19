@@ -7,13 +7,13 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #f3f3f3; /* Professionele neutrale achtergrondkleur */
+            background: #f1f3f6; /* zachter lichtgrijs */
             color: #2c3e50;
         }
 
         /* HERO */
         .hero {
-            background: linear-gradient(135deg, #2f3542, #57606f); /* Donkergrijs → antraciet */
+            background: linear-gradient(135deg, #1e3c72, #2a5298); /* blauw blijft */
             padding: 80px 20px;
             text-align: center;
             color: white;
@@ -45,34 +45,37 @@
             gap: 30px;
         }
 
+        /* CARD BASE */
         .card {
-            background: #faf7f2; /* zandkleur */
             padding: 25px;
             border-radius: 12px;
-            border: 1px solid #e0dcd5;
+            border: 1px solid #d6dbe2;
             box-shadow: 0 2px 6px rgba(0,0,0,0.05);
         }
 
-        /* Variatie voor kaarten */
+        /* CARD VARIATIES */
+        .card:nth-child(1),
+        .card:nth-child(4) {
+            background: #ffffff; /* wit */
+        }
+
         .card:nth-child(2),
         .card:nth-child(5) {
-            background: #f0f0f0; /* lichtgrijs */
-            border-color: #d6d6d6;
+            background: #f4f7fb; /* lichtblauw-grijs */
         }
 
         .card:nth-child(3),
         .card:nth-child(6) {
-            background: #f7f5f0; /* zacht beige */
-            border-color: #ddd8ce;
+            background: #e9eff7; /* zachte blauwe tint */
         }
 
         .card h3 {
-            color: #2f3542; /* donkergrijs */
+            color: #1e3c72; /* blauw accent */
             margin-top: 0;
         }
 
         .card a {
-            color: #6c5ce7; /* modern paars accent */
+            color: #2a5298; /* linkkleur */
             font-weight: bold;
             text-decoration: none;
         }
@@ -80,7 +83,7 @@
         .footer {
             text-align: center;
             margin: 60px 0 20px;
-            color: #7a7a7a;
+            color: #7f8c8d;
             font-size: 14px;
         }
     </style>
@@ -100,7 +103,7 @@
 
     <!-- CONTENT -->
     <div class="container">
-        <h2 style="text-align:center; color:#2f3542;">Overzicht</h2>
+        <h2 style="text-align:center; color:#2c3e50;">Overzicht</h2>
 
         <div class="grid">
 
