@@ -4,89 +4,98 @@
     <meta charset="UTF-8">
     <title>Andres Harinck – E‑Portfolio</title>
     <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f1f3f6; /* zachter lichtgrijs */
-            color: #2c3e50;
-        }
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f1f3f6;
+        color: #2c3e50;
+    }
 
-        /* HERO */
-        .hero {
-            background: linear-gradient(135deg, #1e3c72, #2a5298); /* blauw blijft */
-            padding: 80px 20px;
-            text-align: center;
-            color: white;
-        }
+    /* HERO */
+    .hero {
+        background: linear-gradient(135deg, #1e3c72, #2a5298);
+        padding: 80px 20px;
+        text-align: center;
+        color: white;
+    }
 
-        .hero h1 {
-            font-size: 48px;
-            margin-bottom: 10px;
-            font-weight: 600;
-        }
+    .hero h1 {
+        font-size: 48px;
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
 
-        .hero p {
-            max-width: 800px;
-            margin: 20px auto 0;
-            font-size: 18px;
-            line-height: 1.7;
-        }
+    .hero p {
+        max-width: 800px;
+        margin: 20px auto 0;
+        font-size: 18px;
+        line-height: 1.7;
+    }
 
-        /* GRID */
-        .container {
-            max-width: 1100px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
+    /* GRID */
+    .container {
+        max-width: 1100px;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
 
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-        }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+    }
 
-        /* CARD BASE */
-        .card {
-            padding: 25px;
-            border-radius: 12px;
-            border: 1px solid #d6dbe2;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-        }
+    /* CARD BASE */
+    .card {
+        padding: 25px;
+        border-radius: 12px;
+        border: 1px solid #d6dbe2;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
 
-        /* CARD VARIATIES */
-        .card:nth-child(1),
-        .card:nth-child(4) {
-            background: #ffffff; /* wit */
-        }
+    /* CARD VARIATIES */
+    .card:nth-child(1),
+    .card:nth-child(4),
+    .card:nth-child(7) {
+        background: #ffffff; /* wit */
+    }
 
-        .card:nth-child(2),
-        .card:nth-child(5) {
-            background: #f4f7fb; /* lichtblauw-grijs */
-        }
+    .card:nth-child(2),
+    .card:nth-child(5) {
+        background: #f4f7fb; /* lichtblauw-grijs */
+    }
 
-        .card:nth-child(3),
-        .card:nth-child(6) {
-            background: #e9eff7; /* zachte blauwe tint */
-        }
+    .card:nth-child(3),
+    .card:nth-child(6) {
+        background: #e9eff7; /* zachte blauwe tint */
+    }
 
-        .card h3 {
-            color: #1e3c72; /* blauw accent */
-            margin-top: 0;
+    /* 7e kaart centreren onder kolom 2 op brede schermen */
+    @media (min-width: 900px) {
+        .card:nth-child(7) {
+            grid-column: 2 / 3;
         }
+    }
 
-        .card a {
-            color: #2a5298; /* linkkleur */
-            font-weight: bold;
-            text-decoration: none;
-        }
+    .card h3 {
+        color: #1e3c72;
+        margin-top: 0;
+    }
 
-        .footer {
-            text-align: center;
-            margin: 60px 0 20px;
-            color: #7f8c8d;
-            font-size: 14px;
-        }
-    </style>
+    .card a {
+        color: #2a5298;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .footer {
+        text-align: center;
+        margin: 60px 0 20px;
+        color: #7f8c8d;
+        font-size: 14px;
+    }
+</style>
+
 </head>
 
 <body>
