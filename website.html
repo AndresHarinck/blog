@@ -50,6 +50,30 @@
             margin-bottom: 40px;
         }
 
+        /* FOTO + TEKST LAYOUT */
+        .row {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 25px;
+            align-items: center;
+        }
+
+        .side-photo {
+            width: 100%;
+            border-radius: 12px;
+            border: 1px solid #d6dbe2;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        }
+
+        /* Even blokken: foto rechts */
+        .block:nth-child(even) .row {
+            grid-template-columns: 2fr 1fr;
+        }
+
+        .block:nth-child(even) .side-photo {
+            order: 2;
+        }
+
         h2 {
             color: #1e3c72;
             margin-top: 0;
@@ -80,90 +104,121 @@
 
     <div class="container">
 
+        <!-- BLOK 1 -->
         <div class="block">
-            <h2>1. Opbouw van de website</h2>
+            <div class="row">
+                <img src="assets/website_build.jpg" class="side-photo" alt="Website bouwen">
+                <div class="text">
+                    <h2>1. Opbouw van de website</h2>
 
-            <p>
-                Mijn e‑portfolio is volledig gebouwd met HTML en CSS. 
-                Geen WordPress, geen templates en geen frameworks. 
-                Gewoon zelf schrijven en alles onder controle houden.
-            </p>
+                    <p>
+                        Mijn e‑portfolio is volledig gebouwd met <strong>HTML</strong> en <strong>CSS</strong>. 
+                        Geen WordPress, geen templates en geen frameworks. 
+                        Gewoon zelf schrijven en alles onder controle houden.
+                    </p>
 
-            <p>
-                Ik heb geprobeerd om de HTML en CSS vaardigheden en best practices toe te passen die ik in het eerste jaar heb geleerd. 
-                Het was leuk om dat opnieuw te gebruiken en te merken dat het nog goed in mijn vingers zit. 
-                Ik moet wel eerlijk zijn. Ik heb veel div elementen gebruikt. 
-                Dimitri Casier zal daar waarschijnlijk niet enthousiast van worden, maar voor mij werkte het snel en overzichtelijk. 
-                Het maakte het stylen eenvoudiger en zorgde ervoor dat ik vlot kon doorwerken.
-            </p>
+                    <p>
+                        Ik heb geprobeerd om de <strong>HTML en CSS vaardigheden</strong> en de <strong>best practices</strong> toe te passen die ik in het eerste jaar heb geleerd. 
+                        Het was leuk om dat opnieuw te gebruiken en te merken dat het nog goed in mijn vingers zit. 
+                        Ik moet wel eerlijk zijn. Ik heb veel <strong>div</strong> elementen gebruikt. 
+                        Dimitri Casier zal daar waarschijnlijk niet enthousiast van worden, maar voor mij werkte het snel en overzichtelijk. 
+                        Het maakte het stylen eenvoudiger en zorgde ervoor dat ik vlot kon doorwerken.
+                    </p>
 
-            <p>
-                Er bestaat een gezegde dat IT professionals graag efficiënt werken en soms een creatieve oplossing kiezen om het zichzelf makkelijker te maken. 
-                Ik voel mij daar niet door aangesproken, al klopt het wel volledig.
-            </p>
+                    <p>
+                        Er wordt vaak gezegd dat IT professionals graag efficiënt werken en soms een creatieve oplossing kiezen om het zichzelf makkelijker te maken. 
+                        Ik herken mij daar niet volledig in, al begrijp ik heel goed waarom dat gezegde bestaat.
+                    </p>
 
-            <p>
-                Ik heb ook AI gebruikt om bepaalde CSS problemen sneller op te lossen. 
-                Niet omdat ik het niet kon, maar omdat ik geen zin had om drie uur te zoeken naar een fout die uiteindelijk veroorzaakt werd door een spatie die verkeerd stond. 
-                AI was in dat geval een ideale collega die nooit moe wordt en altijd klaarstaat om te helpen.
-            </p>
-
-            <p>
-                De structuur bestaat uit een homepage en verschillende aparte pagina’s zoals Events, Podcast, Hackathon, Over mij en meer. 
-                Alle afbeeldingen zitten netjes in de map assets.
-            </p>
+                    <p>
+                        Ik heb ook AI gebruikt om bepaalde CSS problemen sneller op te lossen. 
+                        Niet omdat ik het niet kon, maar omdat ik geen zin had om drie uur te zoeken naar een fout die uiteindelijk veroorzaakt werd door een spatie die verkeerd stond. 
+                        AI was in dat geval een ideale collega die nooit moe wordt en altijd klaarstaat om te helpen.
+                    </p>
+                </div>
+            </div>
         </div>
 
+        <!-- BLOK 2 -->
         <div class="block">
-            <h2>2. Technologieën die ik gebruikt heb</h2>
-            <p>
-                De website draait volledig op:
-            </p>
-            <ul>
-                <li>HTML voor de structuur</li>
-                <li>CSS voor de layout en stijlen</li>
-                <li>GitHub Pages voor de hosting</li>
-                <li>GitHub voor versiebeheer</li>
-            </ul>
-            <p>
-                Alles is handgeschreven, maar soms wel met AI als CSS hulplijn wanneer ik er zelf genoeg van had.
-            </p>
+            <div class="row">
+                <img src="assets/technologies.jpg" class="side-photo" alt="Web technologieën">
+                <div class="text">
+                    <h2>2. Technologieën die ik gebruikt heb</h2>
+
+                    <p>
+                        De website draait volledig op:
+                    </p>
+                    <ul>
+                        <li><strong>HTML</strong> voor de structuur</li>
+                        <li><strong>CSS</strong> voor de layout en stijlen</li>
+                        <li><strong>GitHub Pages</strong> voor de hosting</li>
+                        <li><strong>GitHub</strong> voor versiebeheer</li>
+                    </ul>
+
+                    <p>
+                        Alles is handgeschreven, maar soms wel met AI als CSS hulplijn wanneer ik er zelf genoeg van had.
+                    </p>
+                </div>
+            </div>
         </div>
 
+        <!-- BLOK 3 -->
         <div class="block">
-            <h2>3. Hosting via GitHub Pages</h2>
-            <p>
-                De website wordt gehost via GitHub Pages. 
-                Zodra ik een wijziging push, wordt de site automatisch opnieuw gepubliceerd. 
-                Geen gedoe met servers of configuratie. 
-                Gewoon committen, pushen en klaar.
-            </p>
+            <div class="row">
+                <img src="assets/github_pages.jpg" class="side-photo" alt="GitHub Pages hosting">
+                <div class="text">
+                    <h2>3. Hosting via GitHub Pages</h2>
+
+                    <p>
+                        De website wordt gehost via GitHub Pages. 
+                        Zodra ik een wijziging push, wordt de site automatisch opnieuw gepubliceerd. 
+                        Geen gedoe met servers of configuratie. 
+                        Gewoon committen, pushen en klaar.
+                    </p>
+                </div>
+            </div>
         </div>
 
+        <!-- BLOK 4 -->
         <div class="block">
-            <h2>4. Hoe ik nieuwe content toevoeg</h2>
-            <p>
-                Een nieuwe pagina toevoegen gaat snel en eenvoudig.
-            </p>
-            <ol>
-                <li>Een nieuw HTML bestand maken</li>
-                <li>De basisstructuur kopiëren van een bestaande pagina</li>
-                <li>Tekst en foto’s invullen</li>
-                <li>Committen en pushen naar GitHub</li>
-                <li>GitHub Pages publiceert de update automatisch</li>
-            </ol>
-            <p>
-                Gemiddeld kost het mij vijf tot tien minuten om een nieuwe post toe te voegen.
-            </p>
+            <div class="row">
+                <img src="assets/content_workflow.jpg" class="side-photo" alt="Content workflow">
+                <div class="text">
+                    <h2>4. Hoe ik nieuwe content toevoeg</h2>
+
+                    <p>
+                        Een nieuwe pagina toevoegen gaat snel en eenvoudig.
+                    </p>
+                    <ol>
+                        <li>Een nieuw HTML bestand maken</li>
+                        <li>De basisstructuur kopiëren van een bestaande pagina</li>
+                        <li>Tekst en foto’s invullen</li>
+                        <li>Committen en pushen naar GitHub</li>
+                        <li>GitHub Pages publiceert de update automatisch</li>
+                    </ol>
+
+                    <p>
+                        Gemiddeld kost het mij vijf tot tien minuten om een nieuwe post toe te voegen.
+                    </p>
+                </div>
+            </div>
         </div>
 
+        <!-- BLOK 5 -->
         <div class="block">
-            <h2>5. Wat ik geleerd heb</h2>
-            <p>
-                Door deze website te bouwen heb ik mijn HTML en CSS vaardigheden versterkt. 
-                Ik heb opnieuw ervaren hoe handig versiebeheer is en hoe eenvoudig GitHub Pages werkt. 
-                Ik heb ook geleerd dat AI een ideale partner is wanneer ik vastloop op kleine details.
-            </p>
+            <div class="row">
+                <img src="assets/learning.jpg" class="side-photo" alt="Leren en groeien">
+                <div class="text">
+                    <h2>5. Wat ik geleerd heb</h2>
+
+                    <p>
+                        Door deze website te bouwen heb ik mijn <strong>HTML en CSS vaardigheden</strong> versterkt. 
+                        Ik heb opnieuw ervaren hoe handig versiebeheer is en hoe eenvoudig GitHub Pages werkt. 
+                        Ik heb ook geleerd dat AI een ideale partner is wanneer ik vastloop op kleine details.
+                    </p>
+                </div>
+            </div>
         </div>
 
         <p>
