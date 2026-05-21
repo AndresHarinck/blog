@@ -32,43 +32,41 @@
         line-height: 1.7;
     }
 
-    /* GRID */
+    /* CONTAINER */
     .container {
         max-width: 1100px;
         margin: 40px auto;
         padding: 0 20px;
     }
 
+    /* FLEX GRID */
     .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        display: flex;
+        flex-wrap: wrap;
         gap: 30px;
+        justify-content: center;
     }
 
-    /* CARD BASE */
     .card {
+        flex: 1 1 calc(33.333% - 30px);
+        max-width: calc(33.333% - 30px);
         padding: 25px;
         border-radius: 12px;
         border: 1px solid #d6dbe2;
         box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        background: #ffffff;
     }
 
-    /* CARD VARIATIES */
-    .card:nth-child(1),
-    .card:nth-child(4) {
-        background: #ffffff; /* wit */
-    }
-
+    /* KLEUREN PER POSITIE */
     .card:nth-child(2),
-    .card:nth-child(5) {
-        background: #f4f7fb; /* lichtblauw-grijs */
+    .card:nth-child(5),
+    .card:nth-child(7) {
+        background: #f4f7fb; /* middelste kolom kleur */
     }
 
     .card:nth-child(3),
     .card:nth-child(6) {
-        background: #e9eff7; /* zachte blauwe tint */
-    }
-
+        background: #e9eff7; /* rechter kolom kleur */
     }
 
     .card h3 {
@@ -110,46 +108,55 @@
 
         <div class="grid">
 
+            <!-- Kolom 1 -->
             <div class="card">
                 <h3>Over mij</h3>
                 <p>Korte introductie over mijn achtergrond, interesses en professionele doelen.</p>
                 <a href="about.html">Lees meer</a>
             </div>
 
+            <!-- Kolom 2 -->
             <div class="card">
                 <h3>Events & Reflecties</h3>
                 <p>Mijn reflecties op conferenties, gastcolleges en professionele activiteiten.</p>
                 <a href="events.html">Bekijk events</a>
             </div>
 
+            <!-- Kolom 3 -->
             <div class="card">
                 <h3>Podcast</h3>
                 <p>Een gesprek met een expert over een IT‑onderwerp dat mij inspireert.</p>
                 <a href="podcast.html">Beluister de podcast</a>
             </div>
-            
+
+            <!-- Kolom 1 -->
             <div class="card">
                 <h3>Hoe mijn website gemaakt is</h3>
                 <p>Een blik achter de schermen: technologie, structuur en workflow van mijn e‑portfolio.</p>
                 <a href="website.html">Lees de uitleg</a>
-             </div>
-            
+            </div>
+
+            <!-- Kolom 2 -->
             <div class="card">
                 <h3>Hackathon</h3>
                 <p>Mijn deelname aan een hackathon: aanpak, teamwork en lessons learned.</p>
                 <a href="hackathon.html">Lees de ervaring</a>
             </div>
 
+            <!-- Kolom 3 -->
             <div class="card">
                 <h3>LinkedIn</h3>
                 <p>Mijn professioneel netwerk en online aanwezigheid.</p>
                 <a href="linkedin.html">Bekijk mijn profiel</a>
             </div>
+
+            <!-- ⭐ Kolom 2 (CV) -->
             <div class="card">
                 <h3>CV</h3>
                 <p>Mijn curriculum vitae met opleidingen, skills en ervaring.</p>
                 <a href="assets/Curriculum_Vitae_Andres_Harinck_final.pdf" download>Download mijn CV</a>
             </div>
+
         </div>
     </div>
 
