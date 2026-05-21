@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <title>Events & Reflecties - Andres Harinck</title>
     <style>
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            flex: 1;
+        }
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -32,9 +44,10 @@
 
         .card-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            grid-template-columns: repeat(2, 1fr);
             gap: 30px;
         }
+
 
         .card {
             background: #ffffff;
